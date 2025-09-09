@@ -1,0 +1,127 @@
+🛡 Cybersecurity Basics
+
+CIA Triad
+
+Confidentiality – Ensuring information is accessible only to authorized users.
+
+Integrity – Protecting information from unauthorized modifications.
+
+Availability – Ensuring resources are accessible when needed.
+
+Common Threat Types
+
+Phishing – Fake emails/websites tricking users into giving credentials.
+
+Malware – Viruses, worms, trojans causing harm or stealing data.
+
+DDoS – Overwhelming a service to make it unavailable.
+
+SQL Injection – Injecting malicious SQL queries to manipulate databases.
+
+Brute Force – Trying many password combinations until success.
+
+Ransomware – Encrypts files and demands ransom.
+
+Attack Vectors
+
+Social Engineering – Manipulating humans into giving away sensitive info.
+
+Wireless Attacks – Exploiting Wi-Fi protocols (e.g., WPA cracking).
+
+Insider Threats – Malicious or careless actions by employees.
+
+🐧 Linux Fundamentals
+
+File System Navigation
+
+cd (change directory), ls (list files), pwd (print current directory).
+
+File & Directory Permissions
+
+chmod – change file permissions.
+
+chown – change file ownership.
+
+Package Management
+
+apt install <pkg> – install packages.
+
+dpkg -i <file.deb> – install .deb files.
+
+Networking Commands
+
+ifconfig – view network interfaces.
+
+ping <IP> – test connectivity.
+
+netstat – view active connections/ports.
+
+traceroute <host> – trace path to a host.
+
+🌐 Networking Basics
+
+OSI Model (7 Layers)
+
+Physical → Data Link → Network → Transport → Session → Presentation → Application.
+
+Each layer serves the one above it.
+
+TCP/IP Protocol Suite
+
+Application, Transport, Internet, Network Access layers.
+
+Core protocols: TCP, UDP, IP, ICMP.
+
+DNS
+
+Translates domain names into IP addresses.
+
+Example: nslookup google.com.
+
+HTTP vs HTTPS
+
+HTTP – Unsecured communication.
+
+HTTPS – Encrypted using SSL/TLS.
+
+IP Addressing
+
+IPv4 (32-bit), IPv6 (128-bit).
+
+Subnetting – Divides networks into smaller segments.
+
+NAT (Network Address Translation) – Maps private IPs to public IPs.
+
+🔐 Cryptography Basics
+
+Symmetric Encryption
+
+Same key used for encryption & decryption.
+
+Example: AES, DES.
+
+Asymmetric Encryption
+
+Uses public key for encryption & private key for decryption.
+
+Example: RSA, ECC.
+
+Hashing
+
+Converts input into a fixed-size string.
+
+Examples: MD5 (128-bit), SHA-256 (256-bit).
+
+One-way, used for password storage & integrity checks.
+
+Digital Certificates & SSL/TLS
+
+Certificates prove authenticity of websites.
+
+TLS ensures secure communication (confidentiality + integrity).
+
+Hands-On (OpenSSL)
+
+Encrypt message: openssl enc -aes-256-cbc -in file.txt -out file.enc.
+
+Decrypt message: openssl enc -d -aes-256-cbc -in file.enc -out file.txt.
