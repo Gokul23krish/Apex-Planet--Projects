@@ -1,0 +1,77 @@
+🔰  Linux Command Cheat Sheet
+
+File Commands
+
+- ls - Directory listing
+- ls -l - Long listing format
+- ls -a - List all files including hidden files
+- cd /path/to/directory - Change directory
+- pwd - Display the current working directory
+- mkdir directory_name - Create a new directory
+- rmdir directory_name - Remove an empty directory
+- rm file_name - Remove a file
+- rm -r directory_name - Remove a directory and its contents recursively
+- touch file_name - Create or update a file
+- cat file_name - Concatenate and display the file content
+- more file_name - View file content page by page
+- less file_name - Improved viewing of file content over more
+- cp source_file target_file - Copy files from source to target
+- mv old_name new_name - Rename or move a file/directory
+
+SSH (Secure Shell)
+
+- ssh user@host - Connect to host as user
+- ssh -p port user@host - Connect using a specific port
+- ssh-keygen -t rsa - Generate RSA key pair
+- ssh-copy-id user@host - Copy your key to the remote server for password-less login
+
+Searching
+
+- grep pattern files - Search for a pattern in files
+- grep -r pattern dir - Recursively search for a pattern in a directory
+- find dir -name name* - Find files starting with name in a directory
+- locate file_name - Find files by name (uses a database)
+
+Process Management
+
+- ps aux - Display your currently active processes
+- ps aux | grep process_name - Find a process named process_name
+- top - Display all running processes
+- kill pid - Kill a process with a given PID
+- killall process_name - Kill all processes named process_name
+- bg - List stopped or background jobs; resume a stopped job in the background
+- fg - Bring the most recent job to the foreground
+
+File Permissions
+
+- chmod +x file_name - Make a file executable
+- chmod 755 file_name - Set read and execute permissions for owner and read for others
+- chown user:group file_name - Change file owner and group
+
+Networking
+
+- ifconfig - Display all network interfaces and IP addresses
+- ping host - Send ICMP echo request to host
+- traceroute host - Display the route packets take to a network host
+- netstat -tulnp - Display listening ports and their applications
+
+Archiving and Compression
+
+- tar cf archive_name.tar files - Create a tar archive containing files
+- tar xf archive_name.tar - Extract files from a tar archive
+- gzip file_name - Compress a file and rename it to file.gz
+- gunzip file.gz - Decompress file.gz back to the original
+
+System Info and Management
+
+- uname -a - Show system and kernel info
+- df -h - Display free disk space in a human-readable form
+- du -sh directory_name - Show disk usage of a directory in human-readable form
+- free -m - Show free and used memory in MB
+
+Misc Commands
+
+- man command_name - Show manual for a command
+- echo "text" - Display a message on the screen
+- date - Display the current date and time
+- uptime - Show how long the system has been running
